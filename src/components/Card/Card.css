@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 130px;
+  height: 200px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 649px) {
+  .card img {
+    width: 100px;
+    height: 170px;
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.turned .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.turned .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
