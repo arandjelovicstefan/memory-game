@@ -92,7 +92,7 @@ const Game: React.FC = (props: any) => {
         &#8634;
       </button>
       {matched === 6 ? <Redirect to='/scoreboard' /> : null}
-      {!props.currentUser ? <Redirect to='/scoreboard' /> : null}
+      {!props.currentUser ? <Redirect to='/' /> : null}
     </div>
   );
 };
